@@ -178,7 +178,6 @@ public class Cliente{
 	}
 	
 	
-	
 	public void me_parece_a_mi_que_te_vas_a_mover(String pa_donde){ //MUEVE AL PLAYER QUE CONTROLA EL CLIENTE
 		if("w".equals(pa_donde))
 			yo.Arriba();
@@ -209,6 +208,7 @@ public class Cliente{
 			int bytesLeidos=0;
 		
 			String host="localhost"; //localhost para usarlo en mi portatil
+			// Para jugar en una red, simplemente cambiar host por la IP del servidor
 			int port=mi_puerto; //Un cliente envia al 2052, otro al 2053
 		
 			Socket socketServicio=null;
